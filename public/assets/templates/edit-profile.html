@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="57x57" href="../imgs/favicons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../imgs/favicons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../imgs/favicons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../imgs/favicons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../imgs/favicons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../imgs/favicons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../imgs/favicons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../imgs/favicons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../imgs/favicons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="../imgs/favicons/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../imgs/favicons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../imgs/favicons/favicon-16x16.png">
+		<link rel="manifest" href="../imgs/favicons/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="../imgs/favicons/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/bootstrap-select.min.css"/>
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="../css/style.css"/>
+		<link rel="stylesheet" href="../css/responsive.css"/>
+
+
+		<title>Azeer Online System - Edit Profile</title>
+
+	</head>
+
+	<body id="full-width" class="fnt-wht">
+
+		<div class="spacer-40"></div>
+
+		<section id="profile" class="">
+
+			<div class="container">
+
+				<div class="row">
+					<div class="col-lg-2">
+						<center><img src="../imgs/azeer-logo-big.png" class="img-fluid img-50"/></center>
+						<div class="spacer-20"></div>
+					</div>
+					<div class="col-lg-10"></div>
+
+					<div class="col-lg-10 d-flex justify-content-center justify-content-md-start">
+						<h2 class="title">EDIT PROFILE INFORMATION</h2>
+					</div>
+					<div class="col-lg-2"></div>
+				</div>
+
+			</div>
+
+		</section>
+
+		<div class="spacer-40"></div>
+
+		<form action="" method="post" enctype="multipart/form-data">
+
+			<section>
+
+				<div class="container fnt-18">
+
+					<div class="row">
+
+						<!-- Column 1 -->
+						<div class="col-lg-2">
+							<center>
+								<img id="preview" src="../imgs/default-user.jpg" class="img-fluid img-50"/>
+							</center>
+
+							<div class="spacer-10"></div>
+
+							<button type="button" id="btnUploadImg" class="btn btn-md btn-primary btn-w-100 btn-azeer-bl">
+								<i class="fas fa-camera"></i>
+								Upload Image
+							</button>
+
+							<div class="form-group hideThis">
+								<div class="custom-file">
+								  <input type="file" name="img[]" class="custom-file-input" id="uploadImg" accept="image/*">
+									<input type="text" class="form-control" disabled id="file">
+								</div>
+						 </div>
+
+							<div class="spacer-20"></div>
+
+							<div class="form-group">
+								<label class=" col-form-label">Password :</label>
+									<input type="password" class="form-control" value="Administrator">
+							</div>
+
+							<div class="spacer-20"></div>
+
+						</div>
+
+						<!-- Column 2 -->
+						<div class="col-lg-5">
+							<div class="form-group row">
+						    <label class="col-sm-4 col-form-label">Name :</label>
+						    <div class="col-sm-8">
+						      <input type="text" class="form-control" value="Admin">
+						    </div>
+						  </div>
+							<div class="form-group row">
+						    <label class="col-sm-4 col-form-label">Email :</label>
+						    <div class="col-sm-8">
+						      <input type="text" class="form-control" value="admin@test.com">
+						    </div>
+						  </div>
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label">Role :</label>
+								<div class="col-sm-8">
+									<select class="form-control selectpicker" data-live-search="true">
+										<option value="">Please Select</option>
+										<option value="1" selected>Administrator</option>
+										<option value="2">Engineer</option>
+										<option value="3">Customer</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label">Job Title :</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" value="Administrator">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label">Status :</label>
+								<div class="col-sm-8">
+									<select class="form-control selectpicker" data-live-search="true">
+										<option value="">Please Select</option>
+										<option value="1" selected>Active</option>
+										<option value="2">Non-active</option>
+									</select>
+								</div>
+							</div>
+
+						</div>
+
+						<!-- Column 3 -->
+						<div class="col-lg-5">
+							<div class="form-group row">
+						    <label class="col-sm-4 col-form-label">Address :</label>
+						    <div class="col-sm-8">
+						      <input type="text" class="form-control" value="Rm 4, 1234 Bldg, Test Street, Test Dist.">
+						    </div>
+						  </div>
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label">Region :</label>
+								<div class="col-sm-8">
+									<select class="form-control selectpicker" data-live-search="true">
+										<option value="">Please Select</option>
+										<option value="1">Northern Region</option>
+										<option value="2">Southern Region</option>
+										<option value="2" selected>Eastern Region</option>
+										<option value="2">Western Region</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label">City :</label>
+								<div class="col-sm-8">
+									<select class="form-control selectpicker" data-live-search="true">
+										<option value="">Please Select</option>
+										<option value="1" selected>Jeddah</option>
+										<option value="2">Riyadh</option>
+										<option value="2">Dammam</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-sm-4 col-form-label">Zipcode :</label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" value="+966 543123456">
+								</div>
+							</div>
+							<div class="form-group row">
+						    <label class="col-sm-4 col-form-label">Mobile No. :</label>
+						    <div class="col-sm-8">
+						      <input type="text" class="form-control" value="+966 543123456">
+						    </div>
+						  </div>
+						</div>
+
+					</div>
+
+				</div>
+
+
+			</section>
+
+			<div class="spacer-40"></div>
+
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3">
+							<a href="profile.html" class="btn btn-primary btn-lg btn-block btn-azeer-bl">
+								<i class="fas fa-arrow-circle-left marRight-10"></i> Back
+							</a>
+							<div class="spacer-20"></div>
+						</div>
+						<div class="col-lg-3"></div>
+						<div class="col-lg-3"></div>
+						<div class="col-lg-3">
+							<input type="hidden" name="submit" value="Save">
+							<button type="button" class="btn btn-primary btn-lg btn-block btn-azeer-bl">
+								<i class="fas fa-save marRight-10"></i> Save
+							</button>
+							<div class="spacer-20"></div>
+						</div>
+					</div>
+			</div>
+			</section>
+
+		</form>
+
+
+
+		<!-- JavaScript -->
+		<!-- Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="../js/bootstrap-select.min.js" crossorigin="anonymous"></script>
+		<!-- Fontawesome JS -->
+		<script src="https://kit.fontawesome.com/c169c568b6.js" crossorigin="anonymous"></script>
+
+		<!-- Custom JS -->
+		<script src="../js/custom.js" crossorigin="anonymous"></script>
+	</body>
+</html>

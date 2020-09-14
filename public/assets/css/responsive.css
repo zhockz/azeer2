@@ -1,0 +1,50 @@
+@media only screen and (max-width:767px){
+	#full-width{
+		background-image: url(../imgs/azeer-bg-mobile.jpg);
+	}
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+	.img-50{max-width:50%;}
+	.dp-azeer{min-width: 94%;}
+	.title{text-align: center;}
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+
+	.img-50{max-width:50%;}
+	.dp-azeer{min-width: 94.6%;}
+	.title{text-align: left;}
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+	.img-50{max-width:50%;}
+	.dp-azeer{min-width: 96%;}
+	.title{text-align: center;}
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+	.img-50{max-width:100%;}
+	.dp-azeer{min-width: 88%;}
+	.title{text-align: left;}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+	.img-50{max-width:100%;}
+	.dp-azeer{min-width: 90%;}
+	.title{text-align: left;}
+
+}
